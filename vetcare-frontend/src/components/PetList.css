@@ -1,0 +1,76 @@
+/* --- ESTILOS BASE (MOBILE-FIRST) --- */
+/* Por defecto, una sola columna para pantallas pequeñas */
+.pet-list-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.pet-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ... (los otros estilos de .pet-card, h3, p, etc. se quedan igual) ... */
+.pet-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.pet-card p {
+    flex-grow: 1; 
+    color: #555;
+}
+
+.pet-card-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-edit, .btn-delete {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+.no-pets-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #777;
+    padding: 40px;
+}
+
+
+/* --- MEDIA QUERIES PARA PANTALLAS MÁS GRANDES --- */
+
+/* Para tablets (pantallas con un ancho de 768px o más) */
+@media (min-width: 768px) {
+    .pet-list-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+}
+
+/* Para escritorios (pantallas con un ancho de 1024px o más) */
+@media (min-width: 1024px) {
+    .pet-list-container {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    }
+}
