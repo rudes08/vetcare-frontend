@@ -75,3 +75,30 @@
     border-radius: 4px;
     cursor: pointer;
 }
+
+/* --- ESTILOS ADICIONALES PARA FORMULARIOS --- */
+
+/* Estilo para las etiquetas (labels) */
+.form-group label {
+    display: block; /* Asegura que la etiqueta ocupe su propia línea */
+    margin-bottom: 0.5rem; /* Añade un pequeño espacio debajo de la etiqueta */
+    font-weight: bold; /* Hace el texto un poco más grueso */
+    color: #333; /* ¡LA LÍNEA MÁS IMPORTANTE! Cambia el color del texto a gris oscuro */
+}
+
+/* Ajuste para los botones del formulario del modal */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btnCancel {
+    background-color: #6c757d;
+    padding: 0.75rem;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
