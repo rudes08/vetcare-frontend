@@ -76,22 +76,34 @@
     cursor: pointer;
 }
 
-/* --- ESTILOS ADICIONALES PARA FORMULARIOS --- */
+/* --- ESTILOS PARA FORMULARIOS DENTRO DEL DASHBOARD Y MODAL --- */
 
-/* Estilo para las etiquetas (labels) */
-.form-group label {
-    display: block; /* Asegura que la etiqueta ocupe su propia línea */
-    margin-bottom: 0.5rem; /* Añade un pequeño espacio debajo de la etiqueta */
-    font-weight: bold; /* Hace el texto un poco más grueso */
-    color: #333; /* ¡LA LÍNEA MÁS IMPORTANTE! Cambia el color del texto a gris oscuro */
+.form-group {
+    margin-bottom: 1rem;
 }
 
-/* Ajuste para los botones del formulario del modal */
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333333; /* Color gris oscuro, muy visible */
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
 .form-actions {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
     margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
 }
 
 .btnCancel {
